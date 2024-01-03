@@ -232,8 +232,8 @@ Version      : 1.0
 		});
 	}
 	
-	if($('.doctor-slider').length > 0) {
-		$('.doctor-slider').slick({
+	if($('.Tutor-slider').length > 0) {
+		$('.Tutor-slider').slick({
 			dots: false,
 			autoplay:false,
 			infinite: true,
