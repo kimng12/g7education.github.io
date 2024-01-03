@@ -39,7 +39,7 @@ $(function(){
 	    ],
 	    xkey: 'y',
 	    ykeys: ['a', 'b'],
-	    labels: ['Doctors', 'Students'],
+	    labels: ['Tutors', 'Students'],
 	    lineColors: ['#1b5a90','#ff9d00'],
 	    lineWidth: 1,
 	    gridTextSize: 10,
