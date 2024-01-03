@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="username" id="username" placeholder="Username" />
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Password"
+    />
+    <button id="login">Login</button>
+  </body>
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const data = {
+        username,
+        password,
+      };
+      fetch('http://localhost:3000/students/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          if (res.status === 'success') {
+            window.location.href = 'http://localhost:3000/student/home';
+          } else {
+            alert('Invalid username or password');
+          }
+        });
+    }
+  </script>
+</html>

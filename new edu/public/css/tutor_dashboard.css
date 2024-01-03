@@ -1,0 +1,214 @@
+body {
+  font-family: 'Figtree', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.tutor-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  max-width: 1142px;
+  margin: 0 auto 20px; /* Added 20px bottom margin */
+  overflow: hidden;
+}
+
+.tutor-image {
+  flex: 0 0 150px; /* fixed width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tutor-image img {
+  width: 100px; /* Set width of the image */
+  height: 100px; /* Set height of the image */
+  object-fit: cover; /* This will ensure your images cover the area nicely */
+  border-radius: 0; /* This was previously 50% for a circular shape, now set to 0 for square */
+}
+
+.tutor-info {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.tutor-info h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.tutor-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.tutor-introduction {
+  margin: 10px 0;
+  color: #999;
+}
+
+.tutor-introduction-short {
+  margin-top: 20px;
+}
+
+.tutor-introduction-full {
+  display: none; /* Hidden by default */
+  margin-top: 20px;
+}
+
+.info-button,
+.book-button,
+.message-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.info-button {
+  background-color: transparent;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.book-button {
+  background-color: #ff69b4; /* pink */
+  color: white;
+  margin-right: 10px;
+}
+
+.message-button {
+  background-color: #eee;
+  color: #333;
+}
+
+.tutor-rating-price {
+  flex: 0 0 250px; /* fixed width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.tutor-rating {
+  text-align: right;
+}
+
+#numberRating {
+  font-size: 2em;
+  color: #333;
+  margin: 0;
+}
+
+.tutor-price {
+  text-align: right;
+  color: #666;
+}
+
+.stars {
+  color: #f5a623;
+}
+
+/* Add your star styling here */
+#filterForm {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#filterForm label,
+#filterForm input {
+  margin-right: 10px;
+}
+
+#filterForm button {
+  padding: 5px 10px;
+  /* Add your filter form styling here */
+}
+#filterForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#filterForm label {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+#filterForm input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+#filterForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  background-color: #ff69b4;
+  cursor: pointer;
+}
+
+#filterForm button:hover {
+  background-color: #d65897;
+}
+a {
+  text-decoration: none;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .tutor-card {
+    flex-direction: column;
+  }
+
+  .tutor-info,
+  .tutor-rating-price {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tutor-rating-price {
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  #filterForm {
+    flex-direction: column;
+    align-items: stretch; /* Make filter form elements full width */
+  }
+
+  #filterForm label,
+  #filterForm input,
+  #filterForm button {
+    width: 100%; /* Full width for small screens */
+    margin: 5px 0; /* Stack vertically with space between */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .tutor-card {
+    margin: 0 auto 10px; /* Less margin on very small screens */
+  }
+
+  .tutor-image img {
+    width: 80px; /* Smaller images on very small screens */
+    height: 80px;
+  }
+}
