@@ -2461,19 +2461,19 @@ html.menu-opened body {
     transition:all .3s ease 0s;
 	padding: 15px;
 }
-.doc-img {
+.tutor-img {
     position: relative;
     overflow: hidden;
     z-index: 1;
     border-radius: 4px;
 }
-.doc-img img {
+.tutor-img img {
     border-radius: 4px;
 	transform: translateZ(0);
 	transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
     width: 100%;
 }
-.doc-img:hover img {
+.tutor-img:hover img {
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
     transform: scale(1.15);
@@ -2529,7 +2529,7 @@ html.menu-opened body {
 	color: #28a745;
 	margin-left: 3px;
 }
-.profile-widget p.speciality {
+.profile-widget p.Course {
     font-size: 13px;
     color: #757575;
     margin-bottom: 5px;
@@ -2878,21 +2878,21 @@ html.menu-opened body {
     display: inline-block;
     margin-right: 10px;
 }
-.doc-location {
+.tutor-Resume {
     color: #757575;
 	font-size: 14px;
     margin-bottom: 25px;
 }
-.doc-location a {
+.tutor-Resume a {
     color: #d75684;
     font-weight: 500;
 }
-.Tutor-widget .doc-name {
+.Tutor-widget .tutor-name {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 3px;
 }
-.doc-speciality {
+.tutor-Course {
     font-size: 14px;
     color: #757575;
     margin-bottom: 15px;
@@ -3382,6 +3382,64 @@ html.menu-opened body {
 }
 .dropzone .dz-preview.dz-error:hover .dz-error-message {
 	display: none;
+}
+.tutor-vid {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	border: 1px solid;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.tutor-vid::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+h2.vid-head {
+	font-size: 20px;
+	color: #333;
+}
+
+/* Video Popup */
+.tutor-video-popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 998;
+	background: rgba(0, 0, 0, .7);
+	cursor: pointer;
+	display: none !important;
+}
+
+.tutor-video-popup.show-video {
+	display: flex !important;
+}
+
+.iframe-wrapper {
+	position: relative;
+}
+
+.iframe-wrapper .close-video {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -20px;
+	right: 0;
+	background: url(https://image.flaticon.com/icons/svg/149/149690.svg) #fff;
+	border-radius: 50%;
+	background-size: cover;
 }
 /*-----------------
 	18. Booking
@@ -5218,10 +5276,10 @@ html.menu-opened body {
 	32. Reviews
 -----------------------*/
 
-.doc-review.review-listing {
+.tutor-review.review-listing {
 	margin: 0;
 }
-.review-listing.doc-review > ul > li {
+.review-listing.tutor-review > ul > li {
 	background-color: #fff;
 	border: 1px solid #f0f0f0;
 	padding: 20px;
@@ -5961,7 +6019,7 @@ html.menu-opened body {
 	.dash-widget p {
 		font-size: 13px;
 	}
-	.Tutor-widget .doc-name {
+	.Tutor-widget .tutor-name {
 		font-size: 18px;
 	}
 	.exp-title, .booking-total ul li span, .booking-total ul li .total-cost {
