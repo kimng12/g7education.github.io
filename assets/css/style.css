@@ -2529,7 +2529,7 @@ html.menu-opened body {
 	color: #28a745;
 	margin-left: 3px;
 }
-.profile-widget p.Course {
+.profile-widget p.Education {
     font-size: 13px;
     color: #757575;
     margin-bottom: 5px;
@@ -2892,7 +2892,7 @@ html.menu-opened body {
     font-weight: 500;
     margin-bottom: 3px;
 }
-.tutor-Course {
+.tutor-Education {
     font-size: 14px;
     color: #757575;
     margin-bottom: 15px;
