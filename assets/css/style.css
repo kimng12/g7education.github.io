@@ -4845,11 +4845,11 @@ h2.vid-head {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 }
-.upload-images {
+.upload-files {
     position: relative;
     width: 80px;
 }
-.upload-images img {
+.upload-files img {
 	border-radius: 4px;
 	height: 80px;
 	width: auto;
@@ -4859,7 +4859,7 @@ h2.vid-head {
 	display: -ms-flexbox;
 	display: flex;
 }
-.upload-wrap .upload-images + .upload-images {
+.upload-wrap .upload-files + .upload-files {
 	margin-left: 20px;
 }
 .contact-card .card-body {
