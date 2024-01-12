@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (validateForm()) {
             console.log('Form is valid, redirecting to homepage...');
-            window.location.href = './index-2.html'; // Replace with your actual homepage URL
+            window.location.href = '../index.html'; // Replace with your actual homepage URL
         } else {
             console.log('Form validation failed.');
         }
