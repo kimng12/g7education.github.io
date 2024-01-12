@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to handle 'Accept' button click
     function acceptAppointment(event) {
         console.log('Appointment accepted');
+        alert("Appointment Accepted!!!")
         // Implement further actions
     }
 
     // Function to handle 'Cancel' button click
     function cancelAppointment(event) {
         console.log('Appointment canceled');
+        alert("Appointment Denied!!!")
         // Implement further actions
     }
 
