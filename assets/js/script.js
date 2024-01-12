@@ -1,8 +1,4 @@
-/*
-Author       : Dreamguys
-Template Name: G7-education - Bootstrap Template
-Version      : 1.0
-*/
+
 
 (function($) {
     "use strict";

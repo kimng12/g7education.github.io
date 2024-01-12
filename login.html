@@ -146,18 +146,20 @@
 										<div class="login-header">
 											<h3>Login <span>G7-education</span></h3>
 										</div>
-										<form action="https://dreamguys.co.in/demo/G7-education/index.html">
+										<form id="login-form">
 											<div class="form-group form-focus">
-												<input type="email" class="form-control floating">
+												<input type="email" class="form-control floating" id="email">
 												<label class="focus-label">Email</label>
 											</div>
 											<div class="form-group form-focus">
-												<input type="password" class="form-control floating">
+												<input type="password" class="form-control floating" id="password">
 												<label class="focus-label">Password</label>
 											</div>
 											<div class="text-right">
 												<a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
 											</div>
+											<!-- Validation message div -->
+    										<div id="validation-message"></div>
 											<button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button>
 											<div class="login-or">
 												<span class="or-line"></span>
@@ -332,13 +334,10 @@
 		<script src="assets/js/jquery.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-		<script src="assets/js/popper.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
+		<!--<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script> -->
 		
 		<!-- Custom JS -->
-		<script src="assets/js/script.js"></script>
-		
+		<script src="./assets/js/login.js"></script>
 	</body>
-
-<!-- G7-education/login.html  30 Nov 2019 04:12:20 GMT -->
 </html>
