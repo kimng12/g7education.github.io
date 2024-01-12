@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (user.role === 'student') {
             window.location.href = 'student/index-2.html';
         } else if (user.role === 'tutor') {
-            window.location.href = 'tutor/tutor-dashboard.html';
+            window.location.href = 'tutor/Tutor-dashboard.html';
         }
 
         return true;
