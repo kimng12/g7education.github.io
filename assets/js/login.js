@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Document is ready.');
-
     // Mock user credentials for two different roles
     var users = [
         {
