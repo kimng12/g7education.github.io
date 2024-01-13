@@ -19,7 +19,7 @@
 	font-size: 24px;
 	display: inline-block;
 	line-height: 1;
-	text-transform: none;
+	text-Rubysform: none;
 	letter-spacing: normal;
 	word-wrap: normal;
 	white-space: nowrap;
@@ -84,11 +84,11 @@ input:-webkit-autofill:focus {
 input,
 button,
 a {
-	transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-webkit-transition: all 0.4s ease;
+	Rubysition: all 0.4s ease;
+	-moz-Rubysition: all 0.4s ease;
+	-o-Rubysition: all 0.4s ease;
+	-ms-Rubysition: all 0.4s ease;
+	-webkit-Rubysition: all 0.4s ease;
 }
 button:focus {
 	outline: 0;
@@ -218,7 +218,7 @@ table.table td h2 span {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .table tbody tr:last-child {
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .table.table-center td,
 .table.table-center th {
@@ -231,10 +231,10 @@ table.table td h2 span {
 	color: #474648;
 }
 .table-striped thead tr {
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .table-striped tbody tr {
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .table-striped tbody tr:nth-of-type(even) {
 	background-color: rgba(255, 255, 255, 0.3);
@@ -604,7 +604,7 @@ button.bg-danger:hover {
 .btn-outline-primary.disabled, 
 .btn-outline-primary:disabled {
 	color: #d75684;
-	background-color: transparent;
+	background-color: Rubysparent;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active, 
 .btn-outline-primary:not(:disabled):not(.disabled).active,
@@ -630,7 +630,7 @@ button.bg-danger:hover {
 }
 .btn-outline-success.disabled, .btn-outline-success:disabled {
 	color: #00e65b;
-	background-color: transparent;
+	background-color: Rubysparent;
 }
 .btn-outline-success:not(:disabled):not(.disabled):active, 
 .btn-outline-success:not(:disabled):not(.disabled).active,
@@ -656,7 +656,7 @@ button.bg-danger:hover {
 	box-shadow: none;
 }
 .btn-outline-info.disabled, .btn-outline-info:disabled {
-	background-color: transparent;
+	background-color: Rubysparent;
 	color: #009efb;
 }
 .btn-outline-info:not(:disabled):not(.disabled):active, 
@@ -683,7 +683,7 @@ button.bg-danger:hover {
 	box-shadow: none;
 }
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
-	background-color: transparent;
+	background-color: Rubysparent;
 	color: #ffbc34;
 }
 .btn-outline-warning:not(:disabled):not(.disabled):active, 
@@ -711,7 +711,7 @@ button.bg-danger:hover {
 	box-shadow: none;
 }
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
-	background-color: transparent;
+	background-color: Rubysparent;
 	color: #ff0100;
 }
 .btn-outline-danger:not(:disabled):not(.disabled):active, 
@@ -761,7 +761,7 @@ button.bg-danger:hover {
     border-radius: 3px;
     box-shadow: inherit;
 	font-size: 14px;
-    transform-origin: left top 0;
+    Rubysform-origin: left top 0;
 }
 .dropdown-item.active, .dropdown-item:active {
     background-color: #d75684;
@@ -1048,7 +1048,7 @@ button.bg-danger:hover {
 	right: 7px;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	border-color: #dcdcdc transparent transparent;
+	border-color: #dcdcdc Rubysparent Rubysparent;
 	border-style: solid;
 	border-width: 6px 6px 0;
 	height: 0;
@@ -1060,7 +1060,7 @@ button.bg-danger:hover {
 	width: 0;
 }
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-	border-color: transparent transparent #dcdcdc;
+	border-color: Rubysparent Rubysparent #dcdcdc;
 	border-width: 0 6px 6px;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -1101,7 +1101,7 @@ button.bg-danger:hover {
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-	border-color: transparent;
+	border-color: Rubysparent;
 	color: #272b41;
 }
 .nav-tabs.nav-tabs-solid > li > a {
@@ -1122,7 +1122,7 @@ button.bg-danger:hover {
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     background-color: #eee;
-    border-color: transparent;
+    border-color: Rubysparent;
 	color: #272b41;
 }
 .nav-tabs.nav-justified > li > a {
@@ -1134,7 +1134,7 @@ button.bg-danger:hover {
 	border-bottom-color: #ddd;
 }
 .nav-tabs.nav-justified.nav-tabs-solid > li > a {
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .nav-tabs.nav-tabs-solid > li > a {
 	color: #272b41;
@@ -1166,7 +1166,7 @@ button.bg-danger:hover {
 	border-bottom-color: #ddd;
 }
 .nav-tabs-justified.nav-tabs-solid > li > a {
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .nav-tabs.nav-justified.nav-tabs-top {
 	border-bottom: 1px solid #ddd;
@@ -1201,14 +1201,14 @@ button.bg-danger:hover {
 .nav-tabs.nav-tabs-bottom > li > a.active:hover, 
 .nav-tabs.nav-tabs-bottom > li > a.active:focus {
 	border-bottom-width: 2px;
-	border-color: transparent;
+	border-color: Rubysparent;
 	border-bottom-color: #20c0f3;
-	background-color: transparent;
-	transition: none 0s ease 0s; 
-	-moz-transition: none 0s ease 0s; 
-	-o-transition: none 0s ease 0s; 
-	-ms-transition: none 0s ease 0s; 
-	-webkit-transition: none 0s ease 0s;
+	background-color: Rubysparent;
+	Rubysition: none 0s ease 0s; 
+	-moz-Rubysition: none 0s ease 0s; 
+	-o-Rubysition: none 0s ease 0s; 
+	-ms-Rubysition: none 0s ease 0s; 
+	-webkit-Rubysition: none 0s ease 0s;
 }
 .nav-tabs.nav-tabs-solid {
 	background-color: #fafafa;
@@ -1218,7 +1218,7 @@ button.bg-danger:hover {
 	margin-bottom: 0;
 }
 .nav-tabs.nav-tabs-solid > li > a {
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .nav-tabs.nav-tabs-solid > li > a:hover,
 .nav-tabs.nav-tabs-solid > li > a:focus {
@@ -1226,7 +1226,7 @@ button.bg-danger:hover {
 }
 .nav-tabs.nav-tabs-solid > .open:not(.active) > a {
 	background-color: #f5f5f5;
-	border-color: transparent;
+	border-color: Rubysparent;
 }
 .nav-tabs-justified.nav-tabs-top {
 	border-bottom: 1px solid #ddd;
@@ -1291,8 +1291,8 @@ button.bg-danger:hover {
 }
 .modal-backdrop.show {
     opacity: 0.4;
-	-webkit-transition-duration: 400ms;
-	transition-duration: 400ms;
+	-webkit-Rubysition-duration: 400ms;
+	Rubysition-duration: 400ms;
 }
 .modal .card {
 	box-shadow: unset;
@@ -1358,7 +1358,7 @@ button.bg-danger:hover {
 	-khtml-user-select: none;
 	-ms-touch-action: pan-y;
 	touch-action: pan-y;
-	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: Rubysparent;
 }
 .slick-list {
     position: relative;
@@ -1375,11 +1375,11 @@ button.bg-danger:hover {
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
-	-o-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
+	-webkit-Rubysform: Rubyslate3d(0, 0, 0);
+	-moz-Rubysform: Rubyslate3d(0, 0, 0);
+	-ms-Rubysform: Rubyslate3d(0, 0, 0);
+	-o-Rubysform: Rubyslate3d(0, 0, 0);
+	Rubysform: Rubyslate3d(0, 0, 0);
 }
 .slick-track {
     position: relative;
@@ -1427,7 +1427,7 @@ button.bg-danger:hover {
 .slick-vertical .slick-slide {
     display: block;
     height: auto;
-    border: 1px solid transparent;
+    border: 1px solid Rubysparent;
 }
 .slick-arrow.slick-hidden {
     display: none;
@@ -1442,9 +1442,9 @@ button.bg-danger:hover {
     width: 40px;
     height: 40px;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    -webkit-Rubysform: Rubyslate(0, -50%);
+    -ms-Rubysform: Rubyslate(0, -50%);
+    Rubysform: Rubyslate(0, -50%);
 	box-shadow: 1px 6px 14px rgba(0,0,0,0.2);
 	background: #fff;
 	border-radius: 100%;	
@@ -1523,12 +1523,12 @@ button.bg-danger:hover {
 	font-weight: 400;
 	pointer-events: none;
 	position: absolute;
-	-webkit-transform: translate3d(0, 22px, 0) scale(1);
-	-ms-transform: translate3d(0, 22px, 0) scale(1);
-	-o-transform: translate3d(0, 22px, 0) scale(1);
-	transform: translate3d(0, 22px, 0) scale(1);
-	transform-origin: left top;
-	transition: 240ms;
+	-webkit-Rubysform: Rubyslate3d(0, 22px, 0) scale(1);
+	-ms-Rubysform: Rubyslate3d(0, 22px, 0) scale(1);
+	-o-Rubysform: Rubyslate3d(0, 22px, 0) scale(1);
+	Rubysform: Rubyslate3d(0, 22px, 0) scale(1);
+	Rubysform-origin: left top;
+	Rubysition: 240ms;
 	left: 12px;
 	top: -8px;
 	z-index: 1;
@@ -1554,11 +1554,11 @@ button.bg-danger:hover {
 	padding: 21px 12px 6px;
 }
 .form-focus .form-control::-webkit-input-placeholder {
-	color: transparent;
-	transition: 240ms;
+	color: Rubysparent;
+	Rubysition: 240ms;
 }
 .form-focus .form-control:focus::-webkit-input-placeholder {
-	transition: none;
+	Rubysition: none;
 }
 .form-focus.focused .form-control::-webkit-input-placeholder {
 	color: #bbb;
@@ -1579,7 +1579,7 @@ button.bg-danger:hover {
 	right: 7px;
 }
 .form-focus .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	border-color: #ccc transparent transparent;
+	border-color: #ccc Rubysparent Rubysparent;
 	border-style: solid;
 	border-width: 6px 6px 0;
 	height: 0;
@@ -1591,7 +1591,7 @@ button.bg-danger:hover {
 	width: 0;
 }
 .form-focus .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-	border-color: transparent transparent #ccc;
+	border-color: Rubysparent Rubysparent #ccc;
 	border-width: 0 6px 6px;
 }
 .form-focus .select2-container .select2-selection--single .select2-selection__rendered {
@@ -1651,8 +1651,8 @@ button.bg-danger:hover {
     white-space: nowrap;
     font-size: 14px;
     color: #2d3b48;
-    -webkit-transition: all .35s ease;
-    transition: all .35s ease;
+    -webkit-Rubysition: all .35s ease;
+    Rubysition: all .35s ease;
 	width: 100%;
 	border-top: 1px solid #f0f0f0;
 }
@@ -1716,11 +1716,11 @@ button.bg-danger:hover {
 	top: 2px;
 	right: 0;
 	border: 7px solid #fff;
-	border-color: transparent transparent #ffffff #ffffff;
-	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0;
-	-webkit-transform: rotate(135deg);
-	transform: rotate(135deg);
+	border-color: Rubysparent Rubysparent #ffffff #ffffff;
+	-webkit-Rubysform-origin: 0 0;
+	Rubysform-origin: 0 0;
+	-webkit-Rubysform: rotate(135deg);
+	Rubysform: rotate(135deg);
 	box-shadow: -2px 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
 .header-navbar-rht li .dropdown-menu .dropdown-item {
@@ -1752,7 +1752,7 @@ button.bg-danger:hover {
     text-align: center;
     font-size: 15px;
     color: #d75684;
-    text-transform: uppercase;
+    text-Rubysform: uppercase;
     font-weight: 500;
 }
 .header .has-arrow .dropdown-toggle:after {
@@ -1764,22 +1764,22 @@ button.bg-danger:hover {
 	height: 8px;
 	display: inline-block;
 	pointer-events: none;
-	-webkit-transform-origin: 66% 66%;
-	-ms-transform-origin: 66% 66%;
-	transform-origin: 66% 66%;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	-webkit-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	-webkit-Rubysform-origin: 66% 66%;
+	-ms-Rubysform-origin: 66% 66%;
+	Rubysform-origin: 66% 66%;
+	-webkit-Rubysform: rotate(45deg);
+	-ms-Rubysform: rotate(45deg);
+	Rubysform: rotate(45deg);
+	-webkit-Rubysition: all 0.15s ease-in-out;
+	Rubysition: all 0.15s ease-in-out;
 	width: 8px;
 	vertical-align: 2px;
 	margin-left: 10px;
 }
 .header .has-arrow .dropdown-toggle[aria-expanded="true"]:after {
-	-webkit-transform: rotate(-135deg);
-	-ms-transform: rotate(-135deg);
-	transform: rotate(-135deg);
+	-webkit-Rubysform: rotate(-135deg);
+	-ms-Rubysform: rotate(-135deg);
+	Rubysform: rotate(-135deg);
 }
 .user-menu {
     float: right;
@@ -1878,7 +1878,7 @@ button.bg-danger:hover {
 	z-index: 1040;
 }
 .menu-opened .main-menu-wrapper {
-    transform: translateX(0);
+    Rubysform: RubyslateX(0);
 }
 .menu-header {
 	-webkit-box-align: center;
@@ -1941,7 +1941,7 @@ html.menu-opened body {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .footer .footer-widget.footer-menu ul {
     list-style: none;
@@ -1968,7 +1968,7 @@ html.menu-opened body {
 .footer .footer-menu ul li a {
 	color: #fff;
 	font-size: 15px;
-	transition: all 0.4s ease 0s;
+	Rubysition: all 0.4s ease 0s;
 }
 .footer .footer-menu ul li a i {
 	margin-right: 5px;
@@ -2006,9 +2006,9 @@ html.menu-opened body {
 }
 .footer .footer-bottom .copyright-text p a {
 	color: #d75684;
-	-webkit-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
+	-webkit-Rubysition: all 0.4s ease 0s;
+	-o-Rubysition: all 0.4s ease 0s;
+	Rubysition: all 0.4s ease 0s;
 }
 .footer .footer-bottom .copyright-text p a:hover {
 	color: #fff;
@@ -2037,7 +2037,7 @@ html.menu-opened body {
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	font-size: 20px;
-	transition: all 0.4s ease 0s;
+	Rubysition: all 0.4s ease 0s;
 }
 .footer .social-icon ul li a:hover {
 	color: #d75684;
@@ -2290,7 +2290,7 @@ html.menu-opened body {
     height: 5px;
     padding: 0;
     cursor: pointer;
-    color: transparent;
+    color: Rubysparent;
 	border: 0;
 	outline: none;
 	background: #C0C0C0;
@@ -2352,8 +2352,8 @@ html.menu-opened body {
 .speicality-img img {
 	position: absolute;
 	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-ms-Rubysform: RubyslateY(-50%);
+	Rubysform: RubyslateY(-50%);
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -2407,10 +2407,10 @@ html.menu-opened body {
     border-radius:4px;
     margin-bottom:30px;
     position:relative;
-    -webkit-transition:all .3s ease 0s;
-    -moz-transition:all .3s ease 0s;
-    -o-transition:all .3s ease 0s;
-    transition:all .3s ease 0s;
+    -webkit-Rubysition:all .3s ease 0s;
+    -moz-Rubysition:all .3s ease 0s;
+    -o-Rubysition:all .3s ease 0s;
+    Rubysition:all .3s ease 0s;
 	padding: 15px;
 }
 .tutor-img {
@@ -2421,14 +2421,14 @@ html.menu-opened body {
 }
 .tutor-img img {
     border-radius: 4px;
-	transform: translateZ(0);
-	transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+	Rubysform: RubyslateZ(0);
+	Rubysition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
     width: 100%;
 }
 .tutor-img:hover img {
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    transform: scale(1.15);
+    -webkit-Rubysform: scale(1.15);
+    -moz-Rubysform: scale(1.15);
+    Rubysform: scale(1.15);
 }
 .profile-widget .fav-btn {
 	-webkit-box-align: center;
@@ -2448,9 +2448,9 @@ html.menu-opened body {
 	-ms-flex-pack: center;
     border-radius: 3px;
     color: #2E3842;
-    -webkit-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-Rubysform: Rubyslate3d(100%, 0, 0);
+    -ms-Rubysform: Rubyslate3d(100%, 0, 0);
+    Rubysform: Rubyslate3d(100%, 0, 0);
     opacity: 0;
     visibility: hidden;
 	z-index: 99;
@@ -2458,9 +2458,9 @@ html.menu-opened body {
 .profile-widget:hover .fav-btn {
     opacity: 1;
     visibility: visible;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-Rubysform: Rubyslate3d(0, 0, 0);
+    -ms-Rubysform: Rubyslate3d(0, 0, 0);
+    Rubysform: Rubyslate3d(0, 0, 0);
 }
 .profile-widget .fav-btn:hover {
 	background-color: #fb1612;
@@ -2607,7 +2607,7 @@ html.menu-opened body {
 }
 .features-slider .slick-center {
     opacity: 1;
-    transform: scale(1.20);
+    Rubysform: scale(1.20);
 }
 .features-slider .slick-list {
     padding: 16px 50px !important
@@ -2632,7 +2632,7 @@ html.menu-opened body {
     margin: 5px 0 0;
 }
 .page-breadcrumb ol {
-    background-color: transparent;
+    background-color: Rubysparent;
     font-size: 12px;
     margin-bottom: 0;
     padding: 0;
@@ -2705,11 +2705,11 @@ html.menu-opened body {
 	border: 1px solid #dcdcdc;
 	background-color: #fff;
 	border-radius: 3px;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out
+	-moz-Rubysition: all 0.3s ease-in-out;
+	-o-Rubysition: all 0.3s ease-in-out;
+	-webkit-Rubysition: all 0.3s ease-in-out;
+	-ms-Rubysition: all 0.3s ease-in-out;
+	Rubysition: all 0.3s ease-in-out
 }
 .custom_check .checkmark::after {
     content: "\f00c";
@@ -2770,11 +2770,11 @@ html.menu-opened body {
 	height: 12px;
 	border-radius: 50%;
 	background: #ff9b44;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out
+	-moz-Rubysition: all 0.3s ease-in-out;
+	-o-Rubysition: all 0.3s ease-in-out;
+	-webkit-Rubysition: all 0.3s ease-in-out;
+	-ms-Rubysition: all 0.3s ease-in-out;
+	Rubysition: all 0.3s ease-in-out
 }
 
 .filter-widget {
@@ -2934,7 +2934,7 @@ html.menu-opened body {
     letter-spacing: 1px;
     padding: 10px 20px;
     text-align: center;
-    text-transform: uppercase;
+    text-Rubysform: uppercase;
     width: 100%;
 }
 .tutor-booking a.view-pro-btn:hover, .tutor-booking a.view-pro-btn:focus {
@@ -2995,7 +2995,7 @@ html.menu-opened body {
 }
 .user-tabs .nav-tabs > li > a {
 	border: 0;
-	border-bottom: 3px solid transparent;
+	border-bottom: 3px solid Rubysparent;
     color: #3e3e3e;
     font-weight: 600;
     padding: 20px;
@@ -3191,7 +3191,7 @@ html.menu-opened body {
 .review-listing > ul li .comment .comment-body .meta-data span.comment-author {
     font-weight: 600;
     color: #272b41;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .review-listing > ul li .comment .comment-body .meta-data span.comment-date {
     font-size: 14px;
@@ -3231,7 +3231,7 @@ html.menu-opened body {
     color: #757575;
     margin-left: 3px;
     margin-right: 3px;
-    transition: all .3s;
+    Rubysition: all .3s;
 }
 .review-listing .recommend-btn a.like-btn:hover {
 	background-color: #28a745;
@@ -3271,8 +3271,8 @@ html.menu-opened body {
     cursor: pointer;
     font-size: 18px;
     padding: 0;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    -webkit-Rubysition: all .3s ease-in-out;
+    Rubysition: all .3s ease-in-out
 }
 .star-rating label:hover,
 .star-rating label:hover ~ label,
@@ -3446,7 +3446,7 @@ h2.vid-head {
 .day-slot li span {
     display: block;
     font-size: 18px;
-    text-transform: uppercase;
+    text-Rubysform: uppercase;
 }
 .day-slot li span.slot-date {
     display: block;
@@ -3464,7 +3464,7 @@ h2.vid-head {
     text-align: center;
     top: 50%;
     width: 20px !important;
-    transform: translateY(-50%);
+    Rubysform: RubyslateY(-50%);
 }
 .day-slot li.right-arrow {
     right: -11px;
@@ -3473,7 +3473,7 @@ h2.vid-head {
     text-align: center;
     top: 50%;
     width: 20px !important;
-    transform: translateY(-50%);
+    Rubysform: RubyslateY(-50%);
 }
 .schedule-cont {
     padding: 20px;
@@ -3565,7 +3565,7 @@ h2.vid-head {
     height: 50px;
     margin-top: -13px;
     padding: 5px 15px 0;
-    transition: border-color .3s;
+    Rubysition: border-color .3s;
     width: 100%;
 }
 .exist-customer a {
@@ -3588,7 +3588,7 @@ h2.vid-head {
     user-select: none;
     font-weight: 600;
     color: #272b41;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .payment-radio input {
     position: absolute;
@@ -3612,11 +3612,11 @@ h2.vid-head {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    -webkit-Rubysition: all .3s;
+    -moz-Rubysition: all .3s;
+    -ms-Rubysition: all .3s;
+    -o-Rubysition: all .3s;
+    Rubysition: all .3s;
 }
 .payment-radio input:checked ~ .checkmark {
     border-color: #20c0f3;
@@ -3631,26 +3631,26 @@ h2.vid-head {
     background-color: #20c0f3;
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    -o-transform: scale(0.1);
-    transform: scale(0.1);
+    -webkit-Rubysform: scale(0.1);
+    -moz-Rubysform: scale(0.1);
+    -ms-Rubysform: scale(0.1);
+    -o-Rubysform: scale(0.1);
+    Rubysform: scale(0.1);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    -webkit-Rubysition: all .3s;
+    -moz-Rubysition: all .3s;
+    -ms-Rubysition: all .3s;
+    -o-Rubysition: all .3s;
+    Rubysition: all .3s;
 }
 .payment-radio input:checked ~ .checkmark::after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+    -webkit-Rubysform: scale(1);
+    -moz-Rubysform: scale(1);
+    -ms-Rubysform: scale(1);
+    -o-Rubysform: scale(1);
+    Rubysform: scale(1);
     opacity: 1;
     visibility: visible;
 }
@@ -3663,7 +3663,7 @@ h2.vid-head {
     font-size: 14px;
     font-weight: 500;
     color: #272b41;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
     margin-bottom: 15px;
 }
 .booking-date li span {
@@ -3681,7 +3681,7 @@ h2.vid-head {
     font-size: 14px;
     font-weight: 500;
     color: #272b41;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
     margin-bottom: 15px;
 }
 .booking-fee li span {
@@ -3897,7 +3897,7 @@ h2.vid-head {
 	border: 1px solid #dcddea;
 	border-radius: 4px;
 	padding: 6px 15px;
-	text-transform: uppercase;
+	text-Rubysform: uppercase;
 }
 .schedule-nav .nav-tabs li a.active {
 	background: #ff4877;
@@ -3969,7 +3969,7 @@ h2.vid-head {
     right: 0;
     text-align: center;
     margin: 0 auto;
-    transform: translateY(-50%);
+    Rubysform: RubyslateY(-50%);
 }
 .circle-bar > div canvas {
 	width: 90px !important;
@@ -4034,7 +4034,7 @@ h2.vid-head {
     font-size: .875rem;
     font-weight: 500;
     color: #272b41;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .Student-info ul li + li {
 	margin-top: 15px;
@@ -4152,7 +4152,7 @@ h2.vid-head {
 .chat-cont-left .chat-header span {
     font-size: 20px;
     font-weight: 500;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .chat-cont-left .chat-header .chat-compose {
     color: #8a8a8a;
@@ -4204,7 +4204,7 @@ h2.vid-head {
 .chat-cont-left .chat-users-list a.media {
     border-bottom: 1px solid #f0f0f0;
     padding: 10px 15px;
-    transition: all 0.2s ease 0s;
+    Rubysition: all 0.2s ease 0s;
 }
 .chat-cont-left .chat-users-list a.media:last-child {
 	border-bottom: 0;
@@ -4242,7 +4242,7 @@ h2.vid-head {
 }
 .chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-name {
     color: #272b41;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-last-chat {
     color: #8a8a8a;
@@ -4321,7 +4321,7 @@ h2.vid-head {
     color: #272b41;
     font-size: 16px;
     font-weight: 500;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .chat-cont-right .chat-header .media .media-body .user-status {
     color: #666;
@@ -4414,7 +4414,7 @@ h2.vid-head {
     overflow: hidden;
     position: relative;
     text-align: center;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .chat-cont-right .chat-body .chat-date:before {
     background-color: #e0e3e4;
@@ -4457,7 +4457,7 @@ h2.vid-head {
 }
 .chat-cont-right .chat-footer .input-group .input-group-prepend .btn, 
 .chat-cont-right .chat-footer .input-group .input-group-append .btn {
-    background-color: transparent;
+    background-color: Rubysparent;
     border: none;
     color: #9f9f9f;
 }
@@ -4498,9 +4498,9 @@ h2.vid-head {
 	position: relative;
 }
 .chat-cont-right .chat-body .media.received .media-body .msg-box:first-child:before {
-    border-bottom: 6px solid transparent;
+    border-bottom: 6px solid Rubysparent;
     border-right: 6px solid #fff;
-    border-top: 6px solid transparent;
+    border-top: 6px solid Rubysparent;
     content: "";
     height: 0;
     left: -6px;
@@ -4514,9 +4514,9 @@ h2.vid-head {
     position: relative;
 }
 .chat-cont-right .chat-body .media.sent .media-body .msg-box:first-child:before {
-	border-bottom: 6px solid transparent;
+	border-bottom: 6px solid Rubysparent;
 	border-left: 6px solid #e3e3e3;
-	border-top: 6px solid transparent;
+	border-top: 6px solid Rubysparent;
     content: "";
     height: 0;
     left: auto;
@@ -4553,12 +4553,12 @@ h2.vid-head {
 	width: 4px;
 	background: #d2dde9;
 	border-radius: 50%;
-	transform: translate(50%, -50%)
+	Rubysform: Rubyslate(50%, -50%)
 }
 .chat-cont-right .chat-body .media.sent .media-body .msg-box .chat-msg-info li:not(:last-child)::after {
     right: auto;
     left: 8px;
-    transform: translate(-50%, -50%);
+    Rubysform: Rubyslate(-50%, -50%);
     background: #aaa;
 }
 .chat-cont-right .chat-body .media.received .media-body .msg-box > div .chat-time {
@@ -4619,7 +4619,7 @@ h2.vid-head {
 	background: #000;
 	content: "";
 	opacity: 0.4;
-	transition: all .4s;
+	Rubysition: all .4s;
 }
 .chat-attachment:hover:before {
 	opacity: 0.6;
@@ -4633,15 +4633,15 @@ h2.vid-head {
 	padding: 7px 15px;
 	font-size: 13px;
 	opacity: 1;
-	transition: all .4s;
+	Rubysition: all .4s;
 }
 .chat-attach-download {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	Rubysform: Rubyslate(-50%, -50%);
 	opacity: 0;
-	transition: all .4s;
+	Rubysition: all .4s;
 	color: #fff;
 	width: 32px;
 	line-height: 32px;
@@ -4691,9 +4691,9 @@ h2.vid-head {
 	position: absolute;
 	left: -30px;
 	top: 50%;
-	transform: translateY(-50%);
+	Rubysform: RubyslateY(-50%);
 	opacity: 0;
-	transition: all .4s;
+	Rubysition: all .4s;
 	z-index: 2;
 }
 .chat-msg-actions > a {
@@ -4757,7 +4757,7 @@ h2.vid-head {
     margin: 0 auto;
     padding: 10px 15px;
     position: relative;
-    transition: .3s;
+    Rubysition: .3s;
     text-align: center;
     width: 220px;
 }
@@ -4877,7 +4877,7 @@ h2.vid-head {
     background-color: #fcfcfc;
 }
 .calendar-events {
-    border: 1px solid transparent;
+    border: 1px solid Rubysparent;
     cursor: move;
     padding: 10px 15px;
 }
@@ -4903,7 +4903,7 @@ h2.vid-head {
 	font-weight: 600;
 	font-family: 'Roboto', sans-serif;
 	line-height: 30px;
-	text-transform: uppercase;
+	text-Rubysform: uppercase;
 }
 .fc-day-grid-event .fc-time {
 	font-family: 'Roboto', sans-serif;
@@ -4923,7 +4923,7 @@ h2.vid-head {
 	font-size: 14px;
 	line-height: 20px;
 	padding: 10px 0;
-	text-transform: uppercase;
+	text-Rubysform: uppercase;
 }
 .fc-unthemed th,
 .fc-unthemed td,
@@ -4942,7 +4942,7 @@ h2.vid-head {
 	background: #f1f1f1;
 	border: none;
 	color: #797979;
-	text-transform: capitalize;
+	text-Rubysform: capitalize;
 	box-shadow: none !important;
 	border-radius: 3px !important;
 	margin: 0 3px !important;
@@ -5056,7 +5056,7 @@ h2.vid-head {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-transform: capitalize;
+    text-Rubysform: capitalize;
 }
 .dashboard-menu ul li {
 	line-height: inherit;
@@ -5098,7 +5098,7 @@ h2.vid-head {
     right: 20px;
     text-align: center;
     top: 50%;
-    transform: translateY(-50%);
+    Rubysform: RubyslateY(-50%);
 }
 
 /*-----------------
@@ -5301,35 +5301,35 @@ h2.vid-head {
 		opacity: 0;
 		padding: 0;
 		position: absolute;
-		-webkit-transition: all .2s ease;
-		transition: all .2s ease;
-		-webkit-transform: translateY(20px);
-		-ms-transform: translateY(20px);
-		transform: translateY(20px);
+		-webkit-Rubysition: all .2s ease;
+		Rubysition: all .2s ease;
+		-webkit-Rubysform: RubyslateY(20px);
+		-ms-Rubysform: RubyslateY(20px);
+		Rubysform: RubyslateY(20px);
 		top: 100%;
 		visibility: hidden;
 		z-index: 1000;
 	}
 	.main-nav li .submenu::before {
 		border: 7px solid #fff;
-		border-color: transparent transparent #fff #fff;
+		border-color: Rubysparent Rubysparent #fff #fff;
 		box-shadow: -2px 2px 2px -1px rgba(0, 0, 0, 0.1);
 		content: "";
 		left: 45px;
 		position: absolute;
 		top: 2px;
-		-webkit-transform-origin: 0 0;
-		transform-origin: 0 0;
-		-webkit-transform: rotate(135deg);
-		transform: rotate(135deg);
+		-webkit-Rubysform-origin: 0 0;
+		Rubysform-origin: 0 0;
+		-webkit-Rubysform: rotate(135deg);
+		Rubysform: rotate(135deg);
 	}
 	.main-nav li.has-submenu:hover > .submenu {
 		visibility: visible;
 		opacity: 1;
 		margin-top: 0;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
+		-webkit-Rubysform: RubyslateY(0);
+		-ms-Rubysform: RubyslateY(0);
+		Rubysform: RubyslateY(0);
 	}
 	.main-nav .has-submenu.active > a {
 		color: #ff66cc;
@@ -5360,15 +5360,15 @@ h2.vid-head {
 		top: 20px;
 		margin-left: -35px;
 		box-shadow: 1px 1px 0 0 rgba(0,0,0,.15);
-		border-color: transparent #fff #fff transparent;
+		border-color: Rubysparent #fff #fff Rubysparent;
 	}
 	.header-navbar-rht li.show > .dropdown-menu {
 		visibility: visible;
 		opacity: 1;
 		margin-top: 0;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
+		-webkit-Rubysform: RubyslateY(0);
+		-ms-Rubysform: RubyslateY(0);
+		Rubysform: RubyslateY(0);
 	}
 	.header-navbar-rht li .dropdown-menu {
 		border-radius: 5px;
@@ -5377,12 +5377,12 @@ h2.vid-head {
 		min-width: 200px;
 		visibility: hidden;
 		opacity: 0;
-		-webkit-transition: all .2s ease;
-		transition: all .2s ease;
+		-webkit-Rubysition: all .2s ease;
+		Rubysition: all .2s ease;
 		display: block;
-		-webkit-transform: translateY(20px);
-		-ms-transform: translateY(20px);
-		transform: translateY(20px);
+		-webkit-Rubysform: RubyslateY(20px);
+		-ms-Rubysform: RubyslateY(20px);
+		Rubysform: RubyslateY(20px);
 	}
 }
 
@@ -5504,8 +5504,8 @@ h2.vid-head {
 		overflow-x: hidden;
 		overflow-y: auto;
 		z-index: 1060;
-		transform: translateX(-260px);
-		transition: all 0.4s;
+		Rubysform: RubyslateX(-260px);
+		Rubysition: all 0.4s;
 		background-color: #15558d;
 	}
 	.menu-header {
@@ -5540,7 +5540,7 @@ h2.vid-head {
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
 		max-width: 100%;
-		transition: left 0.3s ease-in-out 0s, right 0.3s ease-in-out 0s;
+		Rubysition: left 0.3s ease-in-out 0s, right 0.3s ease-in-out 0s;
 		width: 100%;
 	}
 	.chat-cont-left {
@@ -5749,14 +5749,14 @@ h2.vid-head {
 	.search-box .search-btn span {
 		display: inline-block;
 		margin-left: 5px;
-		text-transform: uppercase;
+		text-Rubysform: uppercase;
 	}
 	.section-search {
 		background: #f9f9f9;
 	}
 	.day-slot li span {
 		font-size: 16px;
-		text-transform: unset;
+		text-Rubysform: unset;
 	}
 	.time-slot li .timing span {
 		display: block;
@@ -5823,7 +5823,7 @@ h2.vid-head {
 	.nav-tabs.nav-justified > li > a.active,
 	.nav-tabs.nav-justified > li > a.active:hover,
 	.nav-tabs.nav-justified > li > a.active:focus {
-		border-color: transparent transparent transparent #20c0f3;
+		border-color: Rubysparent Rubysparent Rubysparent #20c0f3;
 		border-left-width: 2px;
 	}
 	.nav-tabs {
@@ -5839,7 +5839,7 @@ h2.vid-head {
 	}
 	.nav-tabs > li > a {
 		border-width: 2px;
-		border-left-color: transparent;
+		border-left-color: Rubysparent;
 	}
 	.nav-tabs .nav-link {
 		border-width: 2px;
@@ -5853,7 +5853,7 @@ h2.vid-head {
 	.nav-tabs > li > a.active,
 	.nav-tabs > li > a.active:hover,
 	.nav-tabs > li > a.active:focus {
-		border-color: transparent transparent transparent #20c0f3 !important;
+		border-color: Rubysparent Rubysparent Rubysparent #20c0f3 !important;
 		border-left-width: 2px;
 	}
 	.nav-tabs > li.open:not(.active) > a,
@@ -5908,7 +5908,7 @@ h2.vid-head {
 		margin-top: 1.5rem;
 	}
 	.user-tabs .nav-tabs > li > a {
-		border-left: 2px solid transparent;
+		border-left: 2px solid Rubysparent;
 		border-bottom: 0;
 		padding: .5rem 1rem;
 	}
