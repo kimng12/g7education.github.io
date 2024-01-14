@@ -1,12 +1,16 @@
 import {
   returnAppointmentByStudentId,
   returnStudentById,
+  returnTutorById,
+  returnCourseById,
 } from './mock-data.js';
 document.addEventListener('DOMContentLoaded', async function () {
   const fetchUser = await returnStudentById('STU101');
-  localStorage.setItem('currentUser', JSON.stringify(fetchUser));
+  console.log(fetchUser);
+  localStorage.setItem('currentUser', JSON.stringify(fetchUser[0]));
   const student = JSON.parse(localStorage.getItem('currentUser'));
-  const appointments = returnAppointmentByStudentId(student.studentId);
+  console.log(student);
+  const appointments = await returnAppointmentByStudentId(student.studentId);
 
   function renderSidebarData() {
     const sidebarElement = document.querySelector('.profile-sidebar');
@@ -18,14 +22,20 @@ document.addEventListener('DOMContentLoaded', async function () {
     description.innerText = student.location;
   }
 
-  function renderUpcomingTableData() {
+  async function renderUpcomingTableData() {
     const tableElement = document.querySelector('#appointments');
     console.log(tableElement);
     const tableBody = tableElement.querySelector('tbody');
     tableBody.innerHTML = '';
-
+    console.log(appointments);
     for (let i = 0; i < appointments.length; i++) {
-      const row = renderTableRow(appointments[i], i);
+      const course = await returnCourseById(appointments[i].courseId);
+      const courseData = course[0];
+      const tutor = await returnTutorById(appointments[i].tutorId);
+      const row = renderTableRow(
+        { tutor: tutor[0], course: courseData, filter: appointments },
+        i
+      );
       tableBody.appendChild(row);
     }
     if (tableBody.innerHTML == '') {
@@ -33,7 +43,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       tableBody.appendChild(row);
     }
   }
-
+  function renderNoAppointmentRow() {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+            <td colspan="4">No appointments found</td>
+        `;
+    return row;
+  }
   function renderTableRow(data, index) {
     const row = document.createElement('tr');
     row.innerHTML = `

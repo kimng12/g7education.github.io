@@ -2,7 +2,7 @@
 import { returnMockStudentList } from './mock-data.js';
 
 document.addEventListener('DOMContentLoaded', async function () {
-  const students = returnMockStudentList();
+  const students = await returnMockStudentList();
   console.log('Document is ready.');
   console.log(students);
   function createStudentCard(student) {
@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     console.log(studentList);
     if (studentList) {
       studentList.innerHTML = '';
+      console.log(students);
       students.forEach((student) => {
         console.log(student);
         studentList.appendChild(createStudentCard(student));

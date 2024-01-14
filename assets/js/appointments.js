@@ -1,6 +1,7 @@
-import { returnAppointmentList } from './mock-data.js';
+import { returnAppointmentList, returnStudentById } from './mock-data.js';
 document.addEventListener('DOMContentLoaded', async function () {
   const appointments = await returnAppointmentList();
+  console.log(appointments);
   function acceptAppointment(student) {
     //TODO: Implement this function
     console.log(student);
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   document.querySelectorAll('.bg-info-light').forEach((button) => {
     button.addEventListener('click', viewDetails);
   });
-  function createStudentInformationCard(student) {
+  function createStudentInformationCard(student, appointment) {
     const viewDOM = document.createElement('div');
     viewDOM.innerHTML = `
      								<div class="appointment-list">
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 										<div class="profile-det-info">
 											<h3><a href="Student-profile.html">${student.studentName}</a></h3>
 											<div class="Student-details">
-												<h5><i class="far fa-clock"></i>${student.appointmentDate}</h5>
+												<h5><i class="far fa-clock"></i>${appointment.appointmentDate}</h5>
 												<h5><i class="fas fa-map-marker-alt"></i>${student.location}</h5>
 												<h5><i class="fas fa-envelope"></i>${student.email}</h5>
 												<h5 class="mb-0"><i class="fas fa-phone"></i>${student.phoneNumber}</h5>
@@ -62,16 +63,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     return viewDOM;
   }
-  function renderStudentAppointmentsList() {
+  async function renderStudentAppointmentsList() {
     console.log('Rendering student appointments list.');
     const studentAppointmentsList = document.querySelector('.appointments');
     console.log(studentAppointmentsList);
     if (studentAppointmentsList) {
       studentAppointmentsList.innerHTML = '';
-      appointments.forEach((student) => {
+      appointments.forEach(async (appointment) => {
+        console.log(appointment);
+        console.log(appointment.studentId);
+        const student = await returnStudentById(appointment.studentId);
         console.log(student);
         studentAppointmentsList.appendChild(
-          createStudentInformationCard(student)
+          createStudentInformationCard(student[0], appointment)
         );
       });
     }

@@ -1,4 +1,8 @@
-import { returnAppointmentByStudentId } from './mock-data.js';
+import {
+  returnAppointmentByStudentId,
+  returnCourseById,
+  returnTutorById,
+} from './mock-data.js';
 
 document.addEventListener('DOMContentLoaded', async function () {
   console.log('Document is ready.');
@@ -29,27 +33,34 @@ document.addEventListener('DOMContentLoaded', async function () {
             </ul>
             `;
   }
-  function setAppointmentTableBody() {
+  async function setAppointmentTableBody() {
     console.log('Setting appointment table body.');
     const appointmentTableBody = document.querySelector('.table-body');
     appointmentTableBody.innerHTML = '';
-    appointment.forEach((data) => {
+    appointment.forEach(async (data) => {
       console.log(data);
-      appointmentTableBody.appendChild(createAppointmentTableRow(data));
+      const course = await returnCourseById(data.courseId);
+      const tutor = await returnTutorById(data.tutorId);
+      const courseData = course[0];
+      appointmentTableBody.appendChild(
+        createAppointmentTableRow(tutor, courseData)
+      );
     });
   }
-  function createAppointmentTableRow(data) {
+  function createAppointmentTableRow(tutor, courseData) {
     const currentDate = new Date();
     const formattedDate = currentDate.toISOString().split('T')[0];
     console.log(formattedDate);
     let status = '';
     let className = '';
-    if (data.course.startDate > formattedDate) {
+
+    console.log(tutor);
+    if (courseData.startDate > formattedDate) {
       status = 'Upcoming';
       className = 'badge badge-pill bg-warning-light';
     } else if (
-      data.course.startDate <= formattedDate &&
-      data.course.endDate >= formattedDate
+      courseData.startDate <= formattedDate &&
+      courseData.endDate >= formattedDate
     ) {
       status = 'Ongoing';
       className = 'badge badge-pill bg-primary-light';
@@ -67,20 +78,20 @@ document.addEventListener('DOMContentLoaded', async function () {
                                       >
                                         <img
                                           class="avatar-img rounded-circle"
-                                          src=${data.tutor.profileImageUrl}
+                                          src=${tutor.profileImageUrl}
                                           alt="User Image"
                                         />
                                       </div>
                                       <a href="Tutor-profile.html"
-                                        >${data.tutor.name} <span>${data.course.courseID}</span></a
+                                        >${tutor.name} <span>${courseData.courseID}</span></a
                                       >
                                     </h2>
                                   </td>
                                      <td>
-                                    ${data.course.startDate}
+                                    ${courseData.startDate}
                                   </td>
-                                     <td>${data.course.endDate}</td>
-                                     <td>${data.course.courseID}</td>
+                                     <td>${courseData.endDate}</td>
+                                     <td>${courseData.courseID}</td>
                                     <td><span class="${className}">${status}</span></td>
         `;
     return viewDOM;

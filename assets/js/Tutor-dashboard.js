@@ -1,8 +1,13 @@
-import { returnAppointmentByTutorId, returnTutorById } from './mock-data.js';
+import {
+  returnAppointmentByTutorId,
+  returnTutorById,
+  returnCourseById,
+  returnStudentById,
+} from './mock-data.js';
 
 document.addEventListener('DOMContentLoaded', async function () {
   const fetchUser = await returnTutorById('TUT101');
-  localStorage.setItem('currentUser', JSON.stringify(fetchUser));
+  localStorage.setItem('currentUser', JSON.stringify(fetchUser[0]));
   const tutor = JSON.parse(localStorage.getItem('currentUser'));
   const appointments = await returnAppointmentByTutorId(tutor.tutorId);
   console.log(appointments);
@@ -14,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     name.innerText = tutor.name;
     const description = sidebarElement.querySelector('h5');
   }
-  function renderUpcomingTableData() {
+  async function renderUpcomingTableData() {
     const tableElement = document.querySelector('#upcoming-appointments');
     console.log(tableElement);
     const tableBody = tableElement.querySelector('tbody');
@@ -22,7 +27,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     for (let i = 0; i < appointments.length; i++) {
       if (getAppointmentStatus(appointments[i]) == 'Upcoming') {
-        const row = renderTableRow(appointments[i], i);
+        const course = await returnCourseById(appointments[i].courseId);
+        const courseData = course[0];
+        const student = await returnStudentById(appointments[i].studentId);
+        const row = renderTableRow(
+          { student: student[0], course: courseData, filter: appointments },
+          i
+        );
         tableBody.appendChild(row);
       }
     }
@@ -38,7 +49,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     tableBody.innerHTML = '';
     for (let i = 0; i < appointments.length; i++) {
       if (getAppointmentStatus(appointments[i]) == 'Today') {
-        const row = renderTableRow(appointments[i], i);
+        const course = returnCourseById(appointments[i].courseId);
+        const courseData = course[0];
+        const student = returnStudentById(appointments[i].studentId);
+        const row = renderTableRow({ student, course: courseData }, i);
         tableBody.appendChild(row);
       }
     }
