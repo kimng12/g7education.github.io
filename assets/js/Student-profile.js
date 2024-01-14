@@ -1,10 +1,10 @@
 import { returnAppointmentByStudentId } from './mock-data.js';
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
   console.log('Document is ready.');
   const student = JSON.parse(localStorage.getItem('student'));
   console.log(student);
-  const appointment = returnAppointmentByStudentId(student.studentId);
+  const appointment = await returnAppointmentByStudentId(student.studentId);
   console.log(appointment);
 
   function setStickySidebar() {

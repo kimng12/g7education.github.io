@@ -1,7 +1,8 @@
 //Comment: This is the javascript file for the my-Students.html page.
 import { returnMockStudentList } from './mock-data.js';
-const students = returnMockStudentList();
-document.addEventListener('DOMContentLoaded', function () {
+
+document.addEventListener('DOMContentLoaded', async function () {
+  const students = returnMockStudentList();
   console.log('Document is ready.');
   console.log(students);
   function createStudentCard(student) {

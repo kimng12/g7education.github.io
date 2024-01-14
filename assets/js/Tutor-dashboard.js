@@ -1,18 +1,10 @@
-import { returnAppointmentByTutorId } from './mock-data.js';
+import { returnAppointmentByTutorId, returnTutorById } from './mock-data.js';
 
-document.addEventListener('DOMContentLoaded', function () {
-  localStorage.setItem(
-    'currentUser',
-    JSON.stringify({
-      tutorId: 'TUT101',
-      name: 'John Doe',
-      email: 'johndoe@example.com',
-      phoneNumber: '+1 234 567 8901',
-      profileImageUrl: '../assets/img/Tutors/Tutor.jpg',
-    })
-  );
+document.addEventListener('DOMContentLoaded', async function () {
+  const fetchUser = await returnTutorById('TUT101');
+  localStorage.setItem('currentUser', JSON.stringify(fetchUser));
   const tutor = JSON.parse(localStorage.getItem('currentUser'));
-  const appointments = returnAppointmentByTutorId(tutor.tutorId);
+  const appointments = await returnAppointmentByTutorId(tutor.tutorId);
   console.log(appointments);
   function renderSidebarData() {
     const sidebarElement = document.querySelector('.profile-sidebar');

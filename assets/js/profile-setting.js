@@ -1,16 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
-  localStorage.setItem(
-    'currentUser',
-    JSON.stringify({
-      studentId: 'STU101',
-      studentName: 'Richard Wilson',
-      location: 'Newyork, United States',
-      email: 'richard@example.com',
-      phoneNumber: '+1 923 782 4575',
-      profileImageUrl: '../assets/img/Students/Student.jpg',
-      age: 20,
-    })
-  );
+import { getStudentById } from './mock-data.js';
+document.addEventListener('DOMContentLoaded', async function () {
+  const fetchUser = await getStudentById('TUT101');
+  localStorage.setItem('currentUser', JSON.stringify(fetchUser));
   let currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
   function renderProfile() {

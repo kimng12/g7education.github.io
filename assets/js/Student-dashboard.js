@@ -1,18 +1,10 @@
-import { returnAppointmentByStudentId } from './mock-data.js';
-document.addEventListener('DOMContentLoaded', function () {
-  localStorage.setItem(
-    'currentUser',
-    JSON.stringify({
-      studentId: 'STU102',
-      studentName: 'Charlene Reed',
-      appointmentDate: '12 Nov 2019, 5.00 PM',
-      location: 'North Carolina, United States',
-      email: 'charlenereed@example.com',
-      phoneNumber: '+1 828 632 9170',
-      profileImageUrl: '../assets/img/Students/Student1.jpg',
-      age: 21,
-    })
-  );
+import {
+  returnAppointmentByStudentId,
+  returnStudentById,
+} from './mock-data.js';
+document.addEventListener('DOMContentLoaded', async function () {
+  const fetchUser = await returnStudentById('STU101');
+  localStorage.setItem('currentUser', JSON.stringify(fetchUser));
   const student = JSON.parse(localStorage.getItem('currentUser'));
   const appointments = returnAppointmentByStudentId(student.studentId);
 
