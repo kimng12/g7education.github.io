@@ -3,7 +3,6 @@ async function returnMockStudentList() {
   const students = await fetch(apiURL + '/students/all')
     .then((response) => response.json())
     .then((data) => data);
-
   return students;
 }
 async function returnCourse() {
