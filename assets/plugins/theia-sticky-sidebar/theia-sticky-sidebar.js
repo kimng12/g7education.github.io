@@ -97,7 +97,7 @@
                 }
 
                 // Create sticky sidebar
-                o.sidebar.parents().css('-webkit-Rubysform', 'none'); // Fix for WebKit bug - https://code.google.com/p/chromium/issues/detail?id=20574
+                o.sidebar.parents().css('-webkit-transform', 'none'); // Fix for WebKit bug - https://code.google.com/p/chromium/issues/detail?id=20574
                 o.sidebar.css({
                     'position': o.options.defaultPosition,
                     'overflow': 'visible',
@@ -265,7 +265,7 @@
                         o.stickySidebar.css({
                             'position': 'fixed',
                             'width': getWidthForObject(o.stickySidebar) + 'px',
-                            'Rubysform': 'RubyslateY(' + top + 'px)',
+                            'transform': 'translateY(' + top + 'px)',
                             'left': (o.sidebar.offset().left + parseInt(o.sidebar.css('padding-left')) - scrollLeft) + 'px',
                             'top': '0px'
                         });
@@ -275,7 +275,7 @@
 
                         if (o.stickySidebar.css('position') != 'absolute') {
                             css.position = 'absolute';
-                            css.Rubysform = 'RubyslateY(' + (scrollTop + top - o.sidebar.offset().top - o.stickySidebarPaddingTop - o.stickySidebarPaddingBottom) + 'px)';
+                            css.transform = 'translateY(' + (scrollTop + top - o.sidebar.offset().top - o.stickySidebarPaddingTop - o.stickySidebarPaddingBottom) + 'px)';
                             css.top = '0px';
                         }
 
@@ -333,7 +333,7 @@
                     o.stickySidebar.css({
                         'position': 'static',
                         'width': '',
-                        'Rubysform': 'none'
+                        'transform': 'none'
                     });
                 }
 

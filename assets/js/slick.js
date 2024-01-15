@@ -67,7 +67,7 @@
                 touchMove: true,
                 touchThreshold: 5,
                 useCSS: true,
-                useRubysform: true,
+                usetransform: true,
                 variableWidth: false,
                 vertical: false,
                 verticalSwiping: false,
@@ -100,7 +100,7 @@
                 swiping: false,
                 $list: null,
                 touchObject: {},
-                RubysformsEnabled: false,
+                transformsEnabled: false,
                 unslicked: false
             };
 
@@ -111,7 +111,7 @@
             _.animProp = null;
             _.breakpoints = [];
             _.breakpointSettings = [];
-            _.cssRubysitions = false;
+            _.csstransitions = false;
             _.focussed = false;
             _.interrupted = false;
             _.hidden = 'hidden';
@@ -122,8 +122,8 @@
             _.shouldClick = true;
             _.$slider = $(element);
             _.$slidesCache = null;
-            _.RubysformType = null;
-            _.RubysitionType = null;
+            _.transformType = null;
+            _.transitionType = null;
             _.visibilityChange = 'visibilitychange';
             _.windowWidth = 0;
             _.windowTimer = null;
@@ -248,7 +248,7 @@
         if (_.options.rtl === true && _.options.vertical === false) {
             targetLeft = -targetLeft;
         }
-        if (_.RubysformsEnabled === false) {
+        if (_.transformsEnabled === false) {
             if (_.options.vertical === false) {
                 _.$slideTrack.animate({
                     left: targetLeft
@@ -261,7 +261,7 @@
 
         } else {
 
-            if (_.cssRubysitions === false) {
+            if (_.csstransitions === false) {
                 if (_.options.rtl === true) {
                     _.currentLeft = -(_.currentLeft);
                 }
@@ -275,11 +275,11 @@
                     step: function(now) {
                         now = Math.ceil(now);
                         if (_.options.vertical === false) {
-                            animProps[_.animType] = 'Rubyslate(' +
+                            animProps[_.animType] = 'translate(' +
                                 now + 'px, 0px)';
                             _.$slideTrack.css(animProps);
                         } else {
-                            animProps[_.animType] = 'Rubyslate(0px,' +
+                            animProps[_.animType] = 'translate(0px,' +
                                 now + 'px)';
                             _.$slideTrack.css(animProps);
                         }
@@ -293,20 +293,20 @@
 
             } else {
 
-                _.applyRubysition();
+                _.applytransition();
                 targetLeft = Math.ceil(targetLeft);
 
                 if (_.options.vertical === false) {
-                    animProps[_.animType] = 'Rubyslate3d(' + targetLeft + 'px, 0px, 0px)';
+                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px)';
                 } else {
-                    animProps[_.animType] = 'Rubyslate3d(0px,' + targetLeft + 'px, 0px)';
+                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px)';
                 }
                 _.$slideTrack.css(animProps);
 
                 if (callback) {
                     setTimeout(function() {
 
-                        _.disableRubysition();
+                        _.disabletransition();
 
                         callback.call();
                     }, _.options.speed);
@@ -347,21 +347,21 @@
 
     };
 
-    Slick.prototype.applyRubysition = function(slide) {
+    Slick.prototype.applytransition = function(slide) {
 
         var _ = this,
-            Rubysition = {};
+            transition = {};
 
         if (_.options.fade === false) {
-            Rubysition[_.RubysitionType] = _.RubysformType + ' ' + _.options.speed + 'ms ' + _.options.cssEase;
+            transition[_.transitionType] = _.transformType + ' ' + _.options.speed + 'ms ' + _.options.cssEase;
         } else {
-            Rubysition[_.RubysitionType] = 'opacity ' + _.options.speed + 'ms ' + _.options.cssEase;
+            transition[_.transitionType] = 'opacity ' + _.options.speed + 'ms ' + _.options.cssEase;
         }
 
         if (_.options.fade === false) {
-            _.$slideTrack.css(Rubysition);
+            _.$slideTrack.css(transition);
         } else {
-            _.$slides.eq(slide).css(Rubysition);
+            _.$slides.eq(slide).css(transition);
         }
 
     };
@@ -899,17 +899,17 @@
 
     };
 
-    Slick.prototype.disableRubysition = function(slide) {
+    Slick.prototype.disabletransition = function(slide) {
 
         var _ = this,
-            Rubysition = {};
+            transition = {};
 
-        Rubysition[_.RubysitionType] = '';
+        transition[_.transitionType] = '';
 
         if (_.options.fade === false) {
-            _.$slideTrack.css(Rubysition);
+            _.$slideTrack.css(transition);
         } else {
-            _.$slides.eq(slide).css(Rubysition);
+            _.$slides.eq(slide).css(transition);
         }
 
     };
@@ -918,7 +918,7 @@
 
         var _ = this;
 
-        if (_.cssRubysitions === false) {
+        if (_.csstransitions === false) {
 
             _.$slides.eq(slideIndex).css({
                 zIndex: _.options.zIndex
@@ -930,7 +930,7 @@
 
         } else {
 
-            _.applyRubysition(slideIndex);
+            _.applytransition(slideIndex);
 
             _.$slides.eq(slideIndex).css({
                 opacity: 1,
@@ -940,7 +940,7 @@
             if (callback) {
                 setTimeout(function() {
 
-                    _.disableRubysition(slideIndex);
+                    _.disabletransition(slideIndex);
 
                     callback.call();
                 }, _.options.speed);
@@ -954,7 +954,7 @@
 
         var _ = this;
 
-        if (_.cssRubysitions === false) {
+        if (_.csstransitions === false) {
 
             _.$slides.eq(slideIndex).animate({
                 opacity: 0,
@@ -963,7 +963,7 @@
 
         } else {
 
-            _.applyRubysition(slideIndex);
+            _.applytransition(slideIndex);
 
             _.$slides.eq(slideIndex).css({
                 opacity: 0,
@@ -2019,15 +2019,15 @@
 
         positionProps[_.positionProp] = position;
 
-        if (_.RubysformsEnabled === false) {
+        if (_.transformsEnabled === false) {
             _.$slideTrack.css(positionProps);
         } else {
             positionProps = {};
-            if (_.cssRubysitions === false) {
-                positionProps[_.animType] = 'Rubyslate(' + x + ', ' + y + ')';
+            if (_.csstransitions === false) {
+                positionProps[_.animType] = 'translate(' + x + ', ' + y + ')';
                 _.$slideTrack.css(positionProps);
             } else {
-                positionProps[_.animType] = 'Rubyslate3d(' + x + ', ' + y + ', 0px)';
+                positionProps[_.animType] = 'translate3d(' + x + ', ' + y + ', 0px)';
                 _.$slideTrack.css(positionProps);
             }
         }
@@ -2246,11 +2246,11 @@
             _.$slider.removeClass('slick-vertical');
         }
 
-        if (bodyStyle.WebkitRubysition !== undefined ||
-            bodyStyle.MozRubysition !== undefined ||
-            bodyStyle.msRubysition !== undefined) {
+        if (bodyStyle.Webkittransition !== undefined ||
+            bodyStyle.Moztransition !== undefined ||
+            bodyStyle.mstransition !== undefined) {
             if (_.options.useCSS === true) {
-                _.cssRubysitions = true;
+                _.csstransitions = true;
             }
         }
 
@@ -2264,36 +2264,36 @@
             }
         }
 
-        if (bodyStyle.ORubysform !== undefined) {
-            _.animType = 'ORubysform';
-            _.RubysformType = '-o-Rubysform';
-            _.RubysitionType = 'ORubysition';
+        if (bodyStyle.Otransform !== undefined) {
+            _.animType = 'Otransform';
+            _.transformType = '-o-transform';
+            _.transitionType = 'Otransition';
             if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) _.animType = false;
         }
-        if (bodyStyle.MozRubysform !== undefined) {
-            _.animType = 'MozRubysform';
-            _.RubysformType = '-moz-Rubysform';
-            _.RubysitionType = 'MozRubysition';
+        if (bodyStyle.Moztransform !== undefined) {
+            _.animType = 'Moztransform';
+            _.transformType = '-moz-transform';
+            _.transitionType = 'Moztransition';
             if (bodyStyle.perspectiveProperty === undefined && bodyStyle.MozPerspective === undefined) _.animType = false;
         }
-        if (bodyStyle.webkitRubysform !== undefined) {
-            _.animType = 'webkitRubysform';
-            _.RubysformType = '-webkit-Rubysform';
-            _.RubysitionType = 'webkitRubysition';
+        if (bodyStyle.webkittransform !== undefined) {
+            _.animType = 'webkittransform';
+            _.transformType = '-webkit-transform';
+            _.transitionType = 'webkittransition';
             if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) _.animType = false;
         }
-        if (bodyStyle.msRubysform !== undefined) {
-            _.animType = 'msRubysform';
-            _.RubysformType = '-ms-Rubysform';
-            _.RubysitionType = 'msRubysition';
-            if (bodyStyle.msRubysform === undefined) _.animType = false;
+        if (bodyStyle.mstransform !== undefined) {
+            _.animType = 'mstransform';
+            _.transformType = '-ms-transform';
+            _.transitionType = 'mstransition';
+            if (bodyStyle.mstransform === undefined) _.animType = false;
         }
-        if (bodyStyle.Rubysform !== undefined && _.animType !== false) {
-            _.animType = 'Rubysform';
-            _.RubysformType = 'Rubysform';
-            _.RubysitionType = 'Rubysition';
+        if (bodyStyle.transform !== undefined && _.animType !== false) {
+            _.animType = 'transform';
+            _.transformType = 'transform';
+            _.transitionType = 'transition';
         }
-        _.RubysformsEnabled = _.options.useRubysform && (_.animType !== null && _.animType !== false);
+        _.transformsEnabled = _.options.usetransform && (_.animType !== null && _.animType !== false);
     };
 
 
