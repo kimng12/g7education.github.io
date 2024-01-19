@@ -6,6 +6,7 @@
 3. In the terminal of the backend folder, enter "npm i" for the software to install neccessary files
 4. Enter "npm run dev" to start the server & database.
 5. Open the website with the main folder (Go Live)
+   
 *Testing accounts*
 student account: student@example.com
 student password: password123
