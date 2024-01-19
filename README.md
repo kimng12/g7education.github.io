@@ -7,9 +7,9 @@
 4. Enter "npm run dev" to start the server & database.
 5. Open the website with the main folder (Go Live)
    
-*Testing accounts*
-student account: student@example.com
-student password: password123
-tutor account: tutor@example.com
-tutor password: password123
+**Testing accounts**  
+student account: student@example.com  
+student password: password123  
+tutor account: tutor@example.com  
+tutor password: password123  
 
